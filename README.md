@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/SL-Bots-TG/Auto-Filter-Bot">
+  <a href="https://github.com/ADDI-BOT/VENOM-BOT">
     <img src="https://graph.org/file/a66dbf46acf369e26d48a.jpg" alt="Auto Filter Bot">
   </a>
 </p>
