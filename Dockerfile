@@ -1,8 +1,8 @@
 FROM python:3.11
 
-WORKDIR /Auto-Filter-Bot
+WORKDIR /VENOM_MBOT
 
-COPY . /Auto-Filter-Bot
+COPY . /VENOM_MBOT
 
 RUN pip install -r requirements.txt
 
