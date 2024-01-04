@@ -80,8 +80,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/SL_Bots_Support')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/SL_Bots_Updates')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+gXnUPPU9pYY5NWZl')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+kexEdBW4meYwYjM1')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/SL_Films_World')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/SL_Bots_Updates")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/SL_Bots_Updates")
@@ -101,7 +101,7 @@ INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTE
 
 # boolean settings
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-AUTO_DELETE = is_enabled('AUTO_DELETE', False)
+AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
@@ -109,7 +109,7 @@ LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
-SHORTLINK = is_enabled('SHORTLINK', False)
+SHORTLINK = is_enabled('SHORTLINK', True)
 
 # for stream
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001966486547")
