@@ -67,7 +67,7 @@ else:
     SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # for chatGPT
-OPENAI_API = environ.get('OPENAI_API', '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')
+OPENAI_API = environ.get('OPENAI_API', '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')
 if len(OPENAI_API) == 0:
     print('Info - OPENAI_API is empty')
 
