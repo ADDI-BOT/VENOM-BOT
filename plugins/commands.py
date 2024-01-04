@@ -47,10 +47,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ 🔍', switch_inline_query_current_chat='')
+            InlineKeyboardButton('Group-2', url=f'http://t.me/Moviedesires2')
         ],[
             InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_LINK),
-            InlineKeyboardButton('💡 Support Group 💡', url=SUPPORT_LINK)
+            InlineKeyboardButton('Group-1', url=f'http://t.me/Moviedesires1')
         ],[
             InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='my_about'),
@@ -341,7 +341,7 @@ Welcome Text: {settings['welcome_text']}
 
 Tutorial Link: {settings['tutorial']}
 
-Force Channels: {str(settings['fsub'])[1:-1] if settings['fsub'] else 'Not Set'}"""
+Force Channels: {str(settings['fsub'])[1:-1] if settings['fsub'] else 'Set'}"""
 
     btn = [[
         InlineKeyboardButton(text="Close", callback_data="close_data")
