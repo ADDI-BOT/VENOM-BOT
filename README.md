@@ -1,13 +1,13 @@
 <p align="center">
   <a href="https://github.com/ADDI-BOT/VENOM-BOT">
-    <img src="https://graph.org/file/a66dbf46acf369e26d48a.jpg" alt="VENOM_MBOT">
+    <img src="https://i.ibb.co/LnQSgtL/63750c2d544c.jpg" alt="VENOM_MBOT">
   </a>
 </p>
 <h1 align="center">
   <b>VENOM_MBOT</b>
 </h1>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝑊𝑒𝑙𝑐𝑜𝑚𝑒!;𝐶𝑟𝑒𝑎𝑡𝑒𝑑+𝑏𝑦+SL_Bots!;𝐴+S𝑖𝑚𝑝𝑙𝑒+A𝑛𝑑+Movies+Finder+Venom_mb𝑜𝑡!;𝐼𝑛𝑑𝑒𝑥𝑒𝑠+𝐹𝑖𝑙𝑒𝑠+𝑎𝑏𝑜𝑣𝑒+4𝐺𝐵)](https://github.com/ADDI-BOT/VENOM-BOT)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝑊𝑒𝑙𝑐𝑜𝑚𝑒!;𝐶𝑟𝑒𝑎𝑡𝑒𝑑+𝑏𝑦+VENOM_MBOT!;𝐴+S𝑖𝑚𝑝𝑙𝑒+A𝑛𝑑+Movies+Finder+Venom_mb𝑜𝑡!;𝐼𝑛𝑑𝑒𝑥𝑒𝑠+𝐹𝑖𝑙𝑒𝑠+𝑎𝑏𝑜𝑣𝑒+4𝐺𝐵)](https://github.com/ADDI-BOT/VENOM-BOT)
 
 ## 𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠
 - [x] 𝐼𝑀𝐷𝐵 𝑇𝑒𝑚𝑝𝑙𝑎𝑡𝑒 𝑆𝑒𝑡
