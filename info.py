@@ -95,7 +95,7 @@ IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "https://exe.io")
 SHORTLINK_API = environ.get("SHORTLINK_API", "a6d5d912fbe3ca40d0f86d6b3f3d44787f5dee26")
-VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 300)) # Add time in seconds
+VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 45000)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 avi mov mkv').split()]
 
