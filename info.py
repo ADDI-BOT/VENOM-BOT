@@ -87,20 +87,20 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/+SO4wnEs_sF1hODU9")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+SO4wnEs_sF1hODU9")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+DELETE_TIME = int(environ.get('DELETE_TIME', 120)) # Add time in seconds
+CACHE_TIME = int(environ.get('CACHE_TIME', 180))
 MAX_BTN = int(environ.get('MAX_BTN', 10))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english hindi telugu tamil kannada malayalam').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "https://exe.io")
 SHORTLINK_API = environ.get("SHORTLINK_API", "a6d5d912fbe3ca40d0f86d6b3f3d44787f5dee26")
-VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
+VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 300)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 avi mov mkv').split()]
 
 # boolean settings
-IS_VERIFY = is_enabled('IS_VERIFY', False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
