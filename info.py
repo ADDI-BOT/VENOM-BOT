@@ -84,7 +84,7 @@ SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+gXnUPPU9pYY5NWZl')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+kexEdBW4meYwYjM1')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+SO4wnEs_sF1hODU9')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/+SO4wnEs_sF1hODU9")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+SO4wnEs_sF1hODU9")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/c/2098125122/6")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 120)) # Add time in seconds
