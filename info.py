@@ -77,12 +77,12 @@ if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+gXnUPPU9pYY5NWZl')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+kexEdBW4meYwYjM1')
-CHANNELS = environ.get('CHANNELS', 'https://t.me/+SO4wnEs_sF1hODU9')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+SO4wnEs_sF1hODU9')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/+SO4wnEs_sF1hODU9")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+SO4wnEs_sF1hODU9")
 
