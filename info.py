@@ -82,8 +82,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+gXnUPPU9pYY5NWZl')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+kexEdBW4meYwYjM1')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+SO4wnEs_sF1hODU9')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/c/2098125122/6")
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/c/2098125122/6')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/+SO4wnEs_sF1hODU9")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+SO4wnEs_sF1hODU9")
 
 # Bot settings
