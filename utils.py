@@ -68,7 +68,7 @@ async def get_poster(query, bulk=False, id=False, file=None):
                 filtered = movieid
         else:
             filtered = movieid
-        movieid=list(filter(lambda k: k.get('kind') in ['movie', 'tv series'], filtered))
+        movieid=list(filter(lambda k: k.get('kind') in ['movie', 'web series', 'tv series'], filtered))
         if not movieid:
             movieid = filtered
         if bulk:
