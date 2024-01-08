@@ -47,16 +47,16 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('Group-2', url=f'http://t.me/Moviedesires2')
+            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ 🔍', switch_inline_query_current_chat='')
         ],[
             InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_LINK),
-            InlineKeyboardButton('Group-1', url=f'http://t.me/Moviedesires1')
+            InlineKeyboardButton('💡 Support Group 💡', url=SUPPORT_LINK)
         ],[
             InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='my_about'),
             InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', callback_data='my_owner')
         ],[
-            #InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
+            InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -152,7 +152,7 @@ async def start(client, message):
     if type_ != 'shortlink' and settings['shortlink']:
         link = await get_shortlink(settings['url'], settings['api'], f"https://t.me/{temp.U_NAME}?start=shortlink_{grp_id}_{file_id}")
         btn = [[
-            InlineKeyboardButton("♻️ Get File ♻️", url='https://t.me/c/2098125122/6')
+            InlineKeyboardButton("♻️ Get File ♻️", url=link)
         ],[
             InlineKeyboardButton("📍 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 📍", url=settings['tutorial'])
         ]]
@@ -341,7 +341,7 @@ Welcome Text: {settings['welcome_text']}
 
 Tutorial Link: {settings['tutorial']}
 
-Force Channels: {str(settings['fsub'])[1:-1] if settings['fsub'] else 'Set'}"""
+Force Channels: {str(settings['fsub'])[1:-1] if settings['fsub'] else 'Not Set'}"""
 
     btn = [[
         InlineKeyboardButton(text="Close", callback_data="close_data")
