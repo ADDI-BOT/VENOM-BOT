@@ -10,7 +10,7 @@ class script(object):
 
     MY_OWNER_TXT = """★ Name: Ghost Bot
 ★ Username: @ghost_bot_py
-★ Group: <code>@moviedesires2</code>
+★ Group: <a href=@moviedesires2</a>
 ★ Country: India"""
 
     STATUS_TXT = """🗂 Total Files: <code>{}</code>
