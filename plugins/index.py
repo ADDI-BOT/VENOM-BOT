@@ -103,17 +103,17 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):
                     deleted += 1
                     continue
                 elif not message.media:
-                    no_media += 1
+                    no_media += 0
                     continue
                 elif message.media not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.DOCUMENT]:
-                    unsupported += 1
+                    unsupported += 0
                     continue
                 media = getattr(message, message.media.value, None)
                 if not media:
-                    unsupported += 1
+                    unsupported += 0
                     continue
                 elif not (str(media.file_name).lower()).endswith(tuple(INDEX_EXTENSIONS)):
-                    unsupported += 1
+                    unsupported += 0
                     continue
                 media.caption = message.caption
                 sts = await save_file(media)
