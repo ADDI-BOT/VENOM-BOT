@@ -97,7 +97,7 @@ SHORTLINK_URL = environ.get("SHORTLINK_URL", "")
 SHORTLINK_API = environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
-INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mov wmv avi avchd flv f4v swf mkv webm html5').split()]
+INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mov wmv avi avchd flv f4v zip ts swf mkv webm html5').split()]
 
 # boolean settings
 IS_VERIFY = is_enabled('IS_VERIFY', False)
