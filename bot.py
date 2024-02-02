@@ -10,6 +10,9 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 import time, os, platform
 from pyrogram.errors import AccessTokenExpired, AccessTokenInvalid
+from aiogram import Bot, Dispatcher, types
+from keep_alive import keep_alive
+keep_alive()
 
 
 
