@@ -3,7 +3,7 @@ from os import environ
 from Script import script
 from aiogram import Bot, Dispatcher, types
 import os
-from keep_alive import keep_alive
+from keep_alive.py import keep_alive
 keep_alive()
 
 def is_enabled(type, value):
