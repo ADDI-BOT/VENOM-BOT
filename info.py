@@ -1,6 +1,10 @@
 import re, logging
 from os import environ
 from Script import script
+from aiogram import Bot, Dispatcher, types
+import os
+from keep_alive import keep_alive
+keep_alive()
 
 def is_enabled(type, value):
     data = environ.get(type, str(value))
