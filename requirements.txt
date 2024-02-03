@@ -13,6 +13,3 @@ telegraph
 openai
 pyromod
 speedtest-cli
-aiogram==2.23.1
-flask
-
