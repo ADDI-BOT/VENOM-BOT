@@ -28,11 +28,13 @@ async def welcome(bot, message):
             welcome_msg = WELCOME.format(
                 mention = message.new_chat_member.user.mention,
                 title = message.chat.title)
-            buttons = [[
-                InlineKeyboardButton('TUTORIAL', url=TUTORIAL)
-            ]]
             await bot.send_message(chat_id=message.chat.id, text=welcome_msg)
-
+            try:
+                buttons = [[
+                    InlineKeyboardButton('TUTORIAL', url=TUTORIAL)
+            ]]
+            reply_markup=InlineKeyboardMarkup(buttons)
+                
 
 @Client.on_message(filters.command('restart') & filters.user(ADMINS))
 async def restart_bot(bot, message):
