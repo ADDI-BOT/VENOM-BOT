@@ -27,7 +27,7 @@ async def welcome(bot, message):
             WELCOME = settings['welcome_text']
             buttons = [[
                 InlineKeyboardButton('TUTORIAL', url=TUTORIAL)
-            ]]
+            ]],
             welcome_msg = WELCOME.format(
                 mention = message.new_chat_member.user.mention,
                 title = message.chat.title)
