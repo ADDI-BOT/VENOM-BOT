@@ -25,12 +25,12 @@ async def welcome(bot, message):
         settings = await get_settings(message.chat.id)
         if settings["welcome"]:
             WELCOME = settings['welcome_text']
+            buttons = [[
+                InlineKeyboardButton('TUTORIAL', url=TUTORIAL)
+            ]]
             welcome_msg = WELCOME.format(
                 mention = message.new_chat_member.user.mention,
-                title = message.chat.title,
-                buttons = [[
-                InlineKeyboardButton('TUTORIAL', url=TUTORIAL)
-            ]])
+                title = message.chat.title)
             await bot.send_message(chat_id=message.chat.id, text=welcome_msg)
 
 
