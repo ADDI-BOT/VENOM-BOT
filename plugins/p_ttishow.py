@@ -33,7 +33,6 @@ async def welcome(bot, message):
                 buttons = [[
                     InlineKeyboardButton('TUTORIAL', url=TUTORIAL)
             ]]
-            reply_markup=InlineKeyboardMarkup(buttons)
                 
 
 @Client.on_message(filters.command('restart') & filters.user(ADMINS))
