@@ -1,4 +1,4 @@
-import re, logging
+6import re, logging
 from os import environ
 from Script import script
 
@@ -76,7 +76,7 @@ DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://venom:PassworD@999Aq@c
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telagram_Files')
 
 # Links
