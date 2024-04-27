@@ -109,7 +109,7 @@ LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", False)
-SHORTLINK = is_enabled('SHORTLINK', False)
+SHORTLINK = is_enabled('SHORTLINK', True)
 
 # for stream
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001966486547")
