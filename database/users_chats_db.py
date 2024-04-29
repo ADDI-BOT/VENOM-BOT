@@ -24,10 +24,10 @@ class Database:
     }
 
     default_verify = {
-        'is_verified': False,
+        'is_verified':True,
         'verified_time': 0,
-        'verify_token': "",
-        'link': ""
+        'verify_token': "1234567890",
+        'link': "https://techsknowledge01.blogspot.com/2022/07/samsung-galaxy-s23-series-tipped-to-use.html"
     }
     
     def __init__(self):
