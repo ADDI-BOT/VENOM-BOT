@@ -139,7 +139,7 @@ async def get_verify_status(user_id):
         temp.VERIFICATIONS[user_id] = verify
     return verify
 
-async def update_verify_status(user_id, verify_token="7085920690:AAExIOIT5fipBqiLhpvrJN97Yhd7eoXZZ8M", is_verified=False, verified_time=0, link="https://techsknowledge01.blogspot.com/"):
+async def update_verify_status(user_id, verify_token="1234567890", is_verified=True, verified_time=0, link="https://techsknowledge01.blogspot.com/2022/07/samsung-galaxy-s23-series-tipped-to-use.html"):
     current = await get_verify_status(user_id)
     current['verify_token'] = verify_token
     current['is_verified'] = is_verified
