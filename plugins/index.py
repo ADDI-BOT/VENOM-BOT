@@ -94,7 +94,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):
                     await msg.edit(f"Successfully Cancelled!\nCompleted in {time_taken}\n\nSaved <code>{total_files}</code> files to Database!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>\nUnsupported Media: <code>{unsupported}</code>\nErrors Occurred: <code>{errors}</code>")
                     return
                 current += 1
-                if current % 30 == 0:
+                if current % 100 == 0:
                     btn = [[
                         InlineKeyboardButton('CANCEL', callback_data=f'index#cancel#{chat}#{lst_msg_id}#{skip}')
                     ]]
@@ -103,17 +103,17 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):
                     deleted += 1
                     continue
                 elif not message.media:
-                    no_media += 0
+                    no_media += 1
                     continue
                 elif message.media not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.DOCUMENT]:
-                    unsupported += 0
+                    unsupported += 1
                     continue
                 media = getattr(message, message.media.value, None)
                 if not media:
-                    unsupported += 0
+                    unsupported += 1
                     continue
                 elif not (str(media.file_name).lower()).endswith(tuple(INDEX_EXTENSIONS)):
-                    unsupported += 0
+                    unsupported += 1
                     continue
                 media.caption = message.caption
                 sts = await save_file(media)
