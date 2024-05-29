@@ -118,7 +118,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "https://venom-bot-2tyl.onrender.com")
+URL = environ.get("URL", "https://venom-5zjufrs0.b4a.run/")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
